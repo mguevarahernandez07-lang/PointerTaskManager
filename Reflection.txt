@@ -1,0 +1,9 @@
+In this project, I explored three different ways of using pointers in C++: pointers to stack memory, pointers to heap memory, and smart pointers using unique_ptr.
+
+In Part A, I used raw pointers that pointed to stack-allocated objects. The Task objects were created directly in main, and pointers were used only to reference them. No dynamic memory allocation was involved, and no delete statement was needed because stack memory is automatically cleaned up when the program ends.
+
+In Part B, I used raw pointers with dynamic memory allocation. I created an array of Task objects using new and manually deallocated the memory using delete[]. This approach required careful management of memory to avoid leaks and errors. It demonstrated how heap memory persists until it is explicitly released.
+
+In Part C, I used std::unique_ptr to manage dynamically allocated memory safely. The TaskManager class owned the array of tasks, and memory was automatically freed when the object went out of scope. This approach follows RAII principles and prevents memory leaks.
+
+The safest method is using smart pointers because ownership is clear and memory is automatically managed, reducing the risk of bugs and memory leaks.
