@@ -1,21 +1,12 @@
-#ifndef TASKMANAGER_H
-#define TASKMANAGER_H
+#include "TaskManager.h"
 
-#include <memory>
-#include <string>
-#include "Task.h"
+int main() {
+    TaskManager manager(5);
 
-class TaskManager {
-private:
-    std::unique_ptr<Task[]> tasks;
-    int size;
-    int capacity;
+    manager.addTask("Project");
+    manager.addTask("Exam study");
+    manager.listTasks();
 
-public:
-    TaskManager(int capacity);
-    void addTask(const std::string& desc);
-    void listTasks() const;
-};
-
-#endif
+    return 0;
+}
 
