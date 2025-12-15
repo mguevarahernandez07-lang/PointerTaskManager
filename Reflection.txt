@@ -1,2 +1,11 @@
----
-In this project, I learned how different types of pointers work in C++ and how they affect memory management. The project was split into three parts, and each one showed a different way of handling memory. In Part A, I used raw pointers that pointed to stack memory. The Task objects were created directly in main, and the pointers were only used to access them. I did not use new or delete in this part because stack memory is handled automatically. In Part B, I worked with raw pointers and dynamic memory allocation. I created an array of Task objects using new and manually freed the memory using delete[]. This part required more care because forgetting to delete the memory could cause problems. In Part C, I used std::unique_ptr to manage memory safely. The TaskManager class owned the memory, and it was automatically released when the object went out of scope. Overall, smart pointers are the safest option because ownership is clear and memory is managed automatically.
+Reflection – C++ Pointer Project
+
+In this project, I learned how different types of pointers work in C++ and how they affect memory management. The project was split into three parts, and each one showed a different way of handling memory.
+
+In Part A, I used raw pointers that pointed to stack memory. The Task objects were created directly in main, and the pointers were only used to access them. I did not use new or delete in this part because stack memory is handled automatically.
+
+In Part B, I worked with raw pointers and dynamic memory allocation. I created an array of Task objects using new and manually freed the memory using delete[]. This part required more care because forgetting to delete the memory could cause problems.
+
+In Part C, I used std::unique_ptr to manage memory safely. The TaskManager class owned the memory, and it was automatically released when the object went out of scope. This made the code easier to manage and safer.
+
+Overall, I think smart pointers are the safest option because ownership is clear and memory is managed automatically, which helps reduce bugs and memory leaks.
