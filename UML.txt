@@ -1,33 +1,22 @@
 Class Task
-
-id : int
-
-description : string
-
-completed : bool
-
-Task()
-
-Task(int, string)
-
-markCompleted() : void
-
-isCompleted() : bool
-
-getId() : int
-
-getDescription() : string
+-------------------------
+- id : int
+- description : string
+- completed : bool
+-------------------------
++ Task()
++ Task(int, string)
++ markCompleted() : void
++ isCompleted() : bool
++ getId() : int
++ getDescription() : string
 
 Class TaskManager
-
-tasks : unique_ptr<Task[]>
-
-size : int
-
-capacity : int
-
-TaskManager(int)
-
-addTask(string) : void
-
-listTasks() : void
+-------------------------
+- tasks : unique_ptr<Task[]>
+- size : int
+- capacity : int
+-------------------------
++ TaskManager(int)
++ addTask(string) : void
++ listTasks() : void
